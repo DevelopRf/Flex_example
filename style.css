@@ -1,0 +1,60 @@
+.galery .container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.galery .container .heading {
+    max-width: 900px;
+    margin: auto;
+}
+
+.galery .container .heading h2 {
+    font-family: Playball;
+    font-size: 60px;
+    text-align: center;
+    animation: color_change 3s infinite;
+}
+
+.galery .container .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galery .container .cards .card {
+    width: 200px;
+    height: 450px;
+    flex-grow: 1;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.galery .container .cards .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galery .container .cards .card:hover {
+    flex-grow: 3;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: Playball;
+    src: url(./fonts/Playball.ttf);
+}
+
+@keyframes color_change {
+    0% {
+        color: #0d0080;
+    }
+
+    50% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #0066ff;
+    }
+}
